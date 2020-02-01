@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="./weather.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./weather.js"></script>
+
+
+    <p id="banner">Weather Dashboard</p>
+
+</head>
+<body>
+    <script></script>
+    <div id="search">
+        <table>
+            <tr>
+                <td>
+
+
+
+                    <table>
+
+                        <tr>
+                            <td><input id="searchBar"></input><button id="searchButton" onclick="customCity()">O</button></td>
+                        </tr>
+                        <tr><td><hr></td></tr>
+                        <tr>
+                            <td><button class="cityButton" onclick="weatherCall('Austin')">Austin</button></td>
+                        </tr>
+                        <tr><td><hr></td></tr>
+                        <tr>
+                            <td><button class="cityButton" onclick="weatherCall('Chicago')">Chicago</button></td>
+                        </tr>
+                        <tr><td><hr></td></tr>
+                        <tr>
+                            <td><button class="cityButton" onclick="weatherCall('New York')">New York</button></td>
+                        </tr>
+                        <tr><td><hr></td></tr>
+                        <tr>
+                            <td><button class="cityButton" onclick="weatherCall('Orlando')">Orlando</button></td>
+                        </tr>
+                        <tr><td><hr></td></tr>
+                        <tr>
+                            <td><button class="cityButton" onclick="weatherCall('San Francisco')">San Francisco</button></td>
+                        </tr>
+                        <tr><td><hr></td></tr>
+                        <tr>
+                            <td><button class="cityButton" onclick="weatherCall('Seattle')">Seattle</button></td>
+                        </tr>
+                        <tr><td><hr></td></tr>
+                        <tr>
+                            <td><button class="cityButton" onclick="weatherCall('Denver')">Denver</button></td>
+                        </tr>
+                        <tr><td><hr></td></tr>
+                        <tr>
+                            <td><button class="cityButton" onclick="weatherCall('Atlanta')">Atlanta</button></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <table>
+                        <tr>
+
+                            <td>
+                                <b>
+                                    <label id="lblCity"></label>
+                                </b>                                
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <img id="icon"  style="width:100px">
+                            </td>
+                        </tr>                       
+                        <tr>
+                            &nbsp;
+                        </tr>
+                        <tr>
+                            <td>
+                                <label id="lblDate"></label>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td>
+                                <label id="lblTemperature"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label id="lblFeelsLike"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label id="lblHumidity"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label id="lblWind"></label>
+                            </td>
+                        </tr>                       
+                        <tr>
+                            <td>
+                                <table>                                                                                                           
+                                    <tr>
+                                        <td>
+                                            <hr>
+                                            <label id="lblDate1"></label>
+                                        </td>
+                                        <td>
+                                            &nbsp;&nbsp;&nbsp;
+                                        </td>
+                                        <td>
+                                            <hr>
+                                            <label id="lblDate2"></label>
+                                        </td>
+                                        <td>
+                                            &nbsp;&nbsp;&nbsp;
+                                        </td>
+                                        <td>
+                                            <hr>
+                                            <label id="lblDate3"></label>
+                                        </td>
+                                        <td>
+                                            &nbsp;&nbsp;&nbsp;
+                                        </td>
+                                        <td>
+                                            <hr>
+                                            <label id="lblDate4"></label>
+                                        </td>
+                                        <td>
+                                            &nbsp;&nbsp;&nbsp;
+                                        </td>
+                                        <td>
+                                            <hr>
+                                            <label id="lblDate5"></label>
+                                        </td>
+                                    </tr>                        
+                                    <tr>
+                                        <td>
+                                            <label id="lblTemperature1"></label>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                        <td>
+                                            <label id="lblTemperature2"></label>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                        <td>
+                                            <label id="lblTemperature3"></label>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                        <td>
+                                            <label id="lblTemperature4"></label>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                        <td>
+                                            <label id="lblTemperature5"></label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>     
+                                            &nbsp;&nbsp;                                       
+                                           <label id="lblMain1"></label>                                           
+                                            <img id="icon1"  style="width:100px">
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            &nbsp;&nbsp;                                        
+                                            <label id="lblMain2"></label>  
+                                            <img id="icon2"  style="width:100px">
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            &nbsp;&nbsp;                                        
+                                            <label id="lblMain3"></label>  
+                                            <img id="icon3"  style="width:100px">
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            &nbsp;&nbsp;                                       
+                                            <label id="lblMain4"></label>  
+                                            <img id="icon4"  style="width:100px">
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            &nbsp;&nbsp;                                     
+                                            <label id="lblMain5"></label>  
+                                            <img id="icon5"  style="width:100px">
+                                        </td>
+                                    </tr>                                                                      
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="data1">
+
+    </div>
+
+    <ul id="info">
+    </ul>
+</body>
+</html>

@@ -1,0 +1,73 @@
+#banner {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    background-color:black;
+    margin-top: -0.25em;
+    margin-right: -0.35em;
+    margin-left: -0.35em;
+}
+
+#search {
+    
+    align-self: left;
+    margin-right: 35em;
+    background-color: cornflowerblue;
+    color: black;
+    font-size: larger;
+
+}
+
+#display {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -27.8em;
+    background-color: violet;
+
+}
+
+#data1 {
+    margin-left: 25em;
+    margin-right: 13em;
+    background-color: cadetblue;
+
+}
+
+#searchButton {
+
+display:inline-block;
+padding:0.7em 1.4em;
+margin:0 0.3em 0.3em 0;
+border-radius:0.15em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+text-transform:uppercase;
+font-weight:400;
+color:#FFFFFF;
+background-color:#3369ff;
+box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+text-align:center;
+position:relative;
+
+}
+
+#searchBar {
+
+    height: 2.25em;
+
+}
+
+.cityButton {
+
+border: none;
+background-color: inherit;
+font-size: 1.25em;
+cursor: pointer;
+}
+.cityButton:hover{
+text-shadow: 0 0 2em rgba(255,255,255,1);
+color:#FFFFFF;
+border-color:#FFFFFF;
+
+}
